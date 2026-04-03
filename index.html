@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模糊掩码演示</title>
+<style>
+  body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:#1a0a0a;color:#f0e6d3;padding:40px 20px;max-width:700px;margin:0 auto}
+  h1{color:#c8534a;font-size:1.2rem;letter-spacing:5px;text-align:center;margin-bottom:40px}
+  .demo{border:1px solid rgba(200,83,74,0.2);border-radius:12px;padding:24px;margin-bottom:20px;background:rgba(200,83,74,0.04)}
+  .demo-title{font-size:0.7rem;color:rgba(200,83,74,0.5);letter-spacing:2px;margin-bottom:16px}
+  .demo-bg{background:#0a0508;padding:40px 20px;border-radius:8px;min-height:120px;display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative}
+  .notice{color:rgba(200,83,74,0.3);font-size:0.65rem;text-align:center;margin-bottom:12px;letter-spacing:2px}
+</style>
+</head>
+<body>
+
+<h1>— 模糊掩码演示 —</h1>
+
+<div class="demo">
+  <div class="demo-title">blur 1.5px + 删除线 + 苹果</div>
+  <div class="demo-bg">
+    <div class="notice">blur 1.5px + 删除线 + 苹果</div>
+    <span style="font-size:22px;letter-spacing:8px;color:rgba(200,83,74,0.22);filter:blur(1.5px);font-family:serif">CALEB̶ 🍎</span>
+  </div>
+</div>
+
+<div class="demo">
+  <div class="demo-title">仅苹果emoji + blur 2px</div>
+  <div class="demo-bg">
+    <div class="notice">仅苹果emoji + blur 2px</div>
+    <span style="font-size:20px;filter:blur(1.5px)">🍎̶</span>
+  </div>
+</div>
+
+<div class="demo">
+  <div class="demo-title">CALEB̶ 🍎 右下角版本</div>
+  <div class="demo-bg">
+    <div class="notice">CALEB̶ 🍎 右下角版本</div>
+    <span style="font-size:13px;letter-spacing:4px;color:rgba(200,83,74,0.2);filter:blur(1.5px);position:absolute;bottom:10px;right:16px;font-family:serif">CALEB̶ 🍎</span>
+  </div>
+</div>
+
+</body>
+</html>
